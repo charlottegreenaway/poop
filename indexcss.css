@@ -1,0 +1,321 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  transition: 0.5 s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: #bedbf7;
+  color: white;
+  height: 20vh;
+}
+nav .links {
+  display: flex;
+}
+.links p {
+  padding: 10px;
+}
+#mobile-menu-btn {
+  display: none;
+  color:black;
+}
+.mobile-menu {
+  color: black;
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 60vh;
+  width: 70vw;
+  background-color: #bedbf7;
+  z-index: 1;
+  border: 1px solid black;
+}
+@media (max-width: 600px) {
+  #mobile-menu-btn {
+    display: block;
+  }
+  nav p {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+h1{
+	font-size: 37px;
+	font-family: 'Trebuchet MS', sans-serif; 
+	color: black;
+	
+}
+p2{
+	font-family: ariel, helvetica, sans-serif;
+	color: black;
+	font-size:19px;
+	
+}
+h2{
+	font-family: 'Trebuchet MS', sans-serif; 
+	color: black;
+	font-size:25px;
+	
+}
+p3{
+	color:#4e4f4e;
+	font-size:21px;
+	font-family: ariel, helvetica, sans-serif;
+	line-height:180%;
+}
+
+
+
+header{
+	border-bottom:1px solid black;
+}
+div{
+}
+#intro{
+	
+    padding: 50px;
+    margin-top: 20px;
+	margin-bottom:20px;
+	line-height:160%;
+	position: relative;
+	background-color: #f7fafc;
+}
+
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+   object-fit: contain;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.6%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.fade-in {
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+
+
+/* The animation code */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+
+
+
+.header a:link{
+	color: darkgreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+.header a:visited{
+	color: darkgreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+.header a:hover{
+	color: lightgreen;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.responsive {
+  width: 20%;
+  height: auto;
+}
